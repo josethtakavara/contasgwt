@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.5.1//EN" "http://google-web-toolkit.googlecode.com/svn/tags/2.5.1/distro-source/core/src/gwt-module.dtd">
+<module>
+	<inherits name="com.google.gwt.user.User" />
+	<inherits name="com.joseth.contas.beans"/>
+	<source path="client" />
+	<!-- source path="contas.beans" / -->
+	<entry-point class="com.joseth.client.Home" />
+	<add-linker name="xsiframe" />
+	<set-property name="compiler.useSourceMaps" value="true"/>
+
+</module>

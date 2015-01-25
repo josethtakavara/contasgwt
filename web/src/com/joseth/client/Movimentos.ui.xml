@@ -1,0 +1,64 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui="urn:ui:com.google.gwt.uibinder"
+  xmlns:g="urn:import:com.google.gwt.user.client.ui"
+  xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+
+
+  <ui:style>
+    .cellTable {
+      border-bottom: 11px solid #ccc; 
+      text-align: left;
+      font-size: 10px;
+      border-spacing: 0;
+      border-collapse: collapse;
+
+/*      border-color: red;
+      border-style: solid;
+      border-width: 4px;*/
+    }
+    
+  </ui:style>
+
+  <g:HTMLPanel>
+    <style>
+    .par   { background-color: white; }
+    .impar { background-color: #DDDDDD; }
+    </style>
+    <br/>
+    <g:HorizontalPanel>
+	    <g:Widget ui:field="filtroMovimentos"/>
+	    <g:HTMLPanel width="50px"></g:HTMLPanel>
+	    <g:HTMLPanel>
+	      <table class="painel">
+	        <tr><td class="titulo">Classificações</td></tr>
+	        <tr>
+	           <td>
+	              <g:Grid styleName="classPainelInterno" ui:field="classGrid"/>
+	           </td>
+	        </tr>
+	      </table>
+	    </g:HTMLPanel>
+	</g:HorizontalPanel>
+    <br/>
+    <g:HTMLPanel styleName="painel">
+      <table cellspacing='0' cellpadding='0'>
+        <tr >
+          <td valign='top'>
+            <div  style="height:350px; overflow-x: hidden; overflow-y: auto;">
+                <c:CellTable pageSize='15' styleName="{style.cellTable}" ui:field='movimentos' />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td align='center'><c:SimplePager ui:field='movimentosPager' /></td>
+        </tr>
+      </table>
+    </g:HTMLPanel>
+    <br/>
+    <g:HorizontalPanel>
+      <g:PushButton ui:field="classAddBt"><g:upFace><img height="16" src="img/plus.png"/></g:upFace></g:PushButton>
+      <g:PushButton ui:field="classRemBt"><g:upFace><img src="img/excluir.gif"/></g:upFace></g:PushButton>
+    </g:HorizontalPanel>
+  </g:HTMLPanel>
+</ui:UiBinder>

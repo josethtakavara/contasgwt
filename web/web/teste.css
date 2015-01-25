@@ -1,0 +1,141 @@
+body
+{
+	font-family: "sans-serif";
+	font-size: 10px; 
+	background-color: #A0A0A0;
+	margin: 0px;
+}
+
+#contas
+{
+	background-color: #DFDFDF; 
+	width: 1280px; 
+	height: 950px; 
+	margin-left: auto; 
+	margin-right: auto;
+	overflow: auto;
+}
+
+.subcontas
+{
+    background-color: #EFEFEF; 
+    width: 1100px; 
+    height: 700px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.subcontasOver
+{
+	background-color: #EFEFEF;
+    overflow: auto;
+}
+
+.painel
+{
+	border-color: lightblue;
+	border-style: solid;
+	border-collapse:collapse;
+	border-width: 2px;
+	text-align: center;
+	box-shadow: 4px 4px 2px black;
+}
+td.painel
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.classPainelInterno
+{
+
+}
+
+.classPainelCelula
+{
+	text-align: center;
+	width: 115px;
+	border: 1px solid black;
+	padding: 5px;
+	box-shadow: 1px 1px 1px black;
+	
+}
+
+.titulo
+{
+  background: linear-gradient(white, lightblue);
+  background-size: contain;
+  border-bottom: none;
+  font-size: 14px;
+}
+
+.mvId
+{
+	padding: 0px;
+	width: 40px;
+}
+.mvData
+{
+    padding: 0px;
+    width: 60px;
+}
+
+.mvDescricao
+{
+    padding: 0px;
+    width: 350px;
+}
+
+.mvDocumento
+{
+    padding: 0px;
+    width: 60px;
+}
+
+.mvValor
+{
+    padding: 0px;
+    width: 80px;
+    text-align: right;
+}
+
+.mvComentario
+{
+    padding: 0px;
+    width: 250px;
+}
+
+.mvUsuario
+{
+    padding: 0px;
+    width: 80px;
+}
+
+.mvClassificacoes
+{
+    padding: 0px;
+    width: 100px;
+}
+
+.mvClassList
+{
+	margin: 1px;
+	padding-left: 5px;
+}
+
+.movPopMenu
+{
+	padding: 2px;
+	font-size: 12px;
+	background-color: white;
+	border-color: black;
+	border-style: solid;
+	border-collapse:collapse;
+	border-width: 1px;
+	box-shadow: 5px 5px 2px 2px gray;
+}
+
+.movPopItem:hover
+{
+	background-color: gray;
+}

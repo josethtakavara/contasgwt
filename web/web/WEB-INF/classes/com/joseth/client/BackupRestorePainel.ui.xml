@@ -1,0 +1,9 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g="urn:import:com.google.gwt.user.client.ui">
+  <g:FormPanel action="/Contas-web/restrito/restore" method="post" ui:field="form" encoding="multipart/form-data" >
+	  <g:VerticalPanel>
+			<g:PushButton ui:field="backupBt"><g:upFace><img src="img/subBackup.png"/></g:upFace></g:PushButton>
+			<g:FileUpload ui:field="arquivo" name="fu"/>
+			<g:PushButton ui:field="restoreBt"><g:upFace><img src="img/subRestore.png"/></g:upFace></g:PushButton>
+		</g:VerticalPanel>
+	</g:FormPanel>
+</ui:UiBinder> 
